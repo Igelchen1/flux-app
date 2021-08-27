@@ -34,7 +34,7 @@ spec:
 #  namespace: default
 #spec:
 #  rules:
-#  - host: django-master-demoenvironment.msiegert.demo.twistlock.com
+#  - host: django-master-demoenvironment.domain.com
 #    http:
 #      paths:
 #      - backend:
@@ -44,4 +44,4 @@ spec:
 #  tls:
 #  - hosts:
 #    - django-master-demoenvironment.msiegert.demo.twistlock.com
-#    secretName: console-cert
+#    secretName: <secret>
