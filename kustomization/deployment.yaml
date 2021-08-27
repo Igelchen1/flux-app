@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-lte
+  #namespace: default
+  namespace: django-admin-lte
+  labels:
+    app: admin-lte
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin-lte
+  template:
+    metadata:
+      labels:
+        app: admin-lte
+    spec:
+      containers:
+      - name: admin-lte
+        image: docker.io/masie/admin-lte-demo:135
